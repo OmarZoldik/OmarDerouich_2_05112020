@@ -14,7 +14,7 @@ h2 {
 }
 
 h3 {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -23,7 +23,7 @@ h4 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 a {
@@ -31,17 +31,16 @@ a {
   text-decoration: none;
 }
 
-
 body {
-  margin: 0 auto;
-  max-width: 1650px;
-  font-size: 100%;
-}
+    margin: 0 auto;
+    max-width: 1650px;
+    font-size: 100%;
+  }
 
 main {
-  padding-left: 35px;
-  padding-right: 35px;
-}
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 
 /*----------------------------------------------------------------------
 -----------------------------HEADER-----------------------------
@@ -328,6 +327,10 @@ nav ul {
   height: 145px;
 }
 
+#rooms-in-marseille h2{
+    padding: 5px 0px 0px 45px;
+}
+
 #rooms-in-marseille {
   background-color: #f2f2f2;
   border-radius: 30px;
@@ -358,6 +361,7 @@ nav ul {
   background-color: white;
   border-radius: 30px;
   border: 8px solid white;
+  box-shadow: 0px 0px 20px 5px #f2f2f2c4;
 }
 
 .square-rooms-in-marseille :hover {
@@ -366,7 +370,7 @@ nav ul {
 }
 
 .text-logo-rooms-marseille {
-  margin: -8px 5px 10px 9px;
+  margin: -8px 5px 10px 4px;
   line-height: 3px;
 }
 
@@ -428,6 +432,7 @@ nav ul {
   background-color: white;
   border-radius: 30px;
   border: 8px solid white;
+  box-shadow: 0px 0px 20px 5px #f2f2f2c7;
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
@@ -472,9 +477,12 @@ nav ul {
 ------------------------------------------------------------------------*/
 
 #Activity-in-marseille {
-  width: 100%;
   height: auto;
   padding-top: 20px;
+}
+
+#Activity-in-marseille h4{
+    padding-left: 15px;
 }
 
 .Section-activity {
@@ -621,12 +629,12 @@ footer h3 {
 
 /*----------------------------------------------------------------------
 ------------------------------------------------------------------------
---------------------------RESPONSIVE TABLETTE---------------------------
+--------------------------RESPONSIVE MINI laptop---------------------------
 ------------------------------------------------------------------------
 ----------------------------------------------------------------------*/
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1024px) {
 
     h1{
         font-size: 4wh;
@@ -645,8 +653,12 @@ footer h3 {
     p{
         font-size: 1wh;
     }
+
+    main {
+        padding: 0;
+    }
     /*------------------------------
-    ---------HEADER NAVBAR----------
+    ---------HEADER/NAVBAR----------
     ------------------------------*/
 
     header{
@@ -724,9 +736,7 @@ footer h3 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "logo subscribe"
-        "nav nav ";
+        grid-template-areas: "logo subscribe" "nav nav ";
         font-size: 2vh;
     }
 
@@ -762,10 +772,6 @@ footer h3 {
 
     }
 
-
-    main{
-        padding:0;
-    }
 
     /*------------------------------
     ----------PRESENTATION----------
@@ -957,9 +963,10 @@ footer h3 {
     -------------------------------*/
 
     #Activity-in-marseille{
-        padding-left: 19px;
+        padding-left: 0px;
         padding-right: 19px;
     }
+
 
     .square-article{
         height: auto;
@@ -982,6 +989,10 @@ footer h3 {
         width: 48%;
     }
 
+    /*------------------------------
+    -------------FOOTER-----------
+    -------------------------------*/
+
     footer{
         width: auto;
         margin-top: 50px;
@@ -989,7 +1000,7 @@ footer h3 {
     }
 
     #menu-footer {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     li a{
@@ -999,8 +1010,179 @@ footer h3 {
 }
 
 
-@media screen and (max-width: 1158px){
-    #menu-footer {
+/*----------------------------------------------------------------------
+------------------------------------------------------------------------
+--------------------------RESPONSIVE MOBILE/TABLETTE--------------------
+------------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+@media screen and (max-width: 900px){
+  
+
+    h1{
+        line-height: 1em;
+        font-size: 1wh;
+    }
+        
+    h2{
+        font-size: 1wh;
+    }
+    
+    h3{
+        font-size: 1wh;
+        font-weight: 700;
+    }
+    
+    h4{
+        font-size: 1wh;
+     
+    }
+    
+    p{
+        font-size: 1wh;
+    }
+
+    /*-----------------------------------------
+    -------------HEADER/NAVBAR-----------
+    ------------------------------------------*/
+
+    .subscribe a{
+        font-size: 1wh;
+    }
+
+    .navigation1{
+        font-size: 1wh;
+
+    }
+
+    .navigation2{
+        font-size: 1wh;
+
+    }
+
+
+    #filters-section button {
+        height: 55px;
+        margin-right: 10px;
+    }
+
+    .circle-icon-filter {
+        height: 55px;
+        width: 55px;
+    }
+
+    /*---------------------------------------------
+    -------------LES PLUS POPULAIRES-----------
+    ---------------------------------------------*/
+    #most-populaires{
+        flex-direction: column;
+        width: 100%;
+        height: 800px;
+        border-radius: 0px;
+
+    } 
+    
+    .image-size-popular{
+        width: 45%;
+        height: 180px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .square-most-popular a{
+        flex-direction: row;
+    }
+
+    .square-most-popular {
+        width: 100%;
+        height: 25%;
+    }
+
+
+    #section-most-popular{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-logo-most-popular{
+        padding: 5px 10px;
+    }
+
+    .text-logo-most-popular p{
+        top: 25px
+    }
+
+    .star-logo-right{
+        bottom: 10px;
+    }
+
+    /*---------------------------------------------
+    -------------hebergement a marseille-----------
+    ---------------------------------------------*/
+    
+    #rooms-in-marseille{
+        height: auto;
+        background-color: white;
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .square-rooms-in-marseille{
+        width: 100%;
+        height: 15%
+    }
+
+    .text-logo-rooms-marseille {
+        margin: 0px 5px 10px 9px;
+    }
+
+    .text-logo-rooms-marseille p{
+        top: 45px;
+        line-height: 1em;
+    }
+ 
+    #more{
+        font-weight: 800;
+    }
+
+
+    /*------------------------------
+    -------------ACTIVITE-----------
+    -------------------------------*/
+
+    .Section-activity{
         flex-direction: column;
     }
+
+    .image-size-activty{
+        height: 210px;
+    }
+
+    .big-picture-link{
+        width: 100%;
+    }
+
+    .big-picture-link-2{
+        margin-top: 100px;
+    }
+
+    .columns-picture{
+        width: 100%;
+        height: 550px;
+    }
+
+    .columns-picture-2{
+        width: 100%;
+        height: 575px;
+    }
+
 }
+
+
+
