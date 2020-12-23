@@ -28,16 +28,13 @@
             </section>
             
             <!--section Bar de Recherche-->
-            <section id="search-section">
-                    <!--icon localisation-->
-                <div class="search-bar">
-                    <div class="logo-localisation">
-                        <i class="fas fa-map-marker-alt fa-lg"></i>
-                    </div>
-                    <input type="search" class="type-search" placeholder="Marseille,Paris" name="location-search">
-                    <button class="rechercher"><span>Rechercher</span></button><button class="rechercher-responsive"><i class="fas fa-search fa-lg"></i></button>
+            <div class="search-bar">
+                <div class="logo-localisation">
+                    <i class="fas fa-map-marker-alt fa-lg"></i>
                 </div>
-            </section>
+                <input type="search" class="type-search" placeholder="Marseille,Paris" name="location-search">
+                <button class="rechercher"><span>Rechercher</span></button><button class="rechercher-responsive"><i class="fas fa-search fa-lg"></i></button>
+            </div>
                 
             <!--section bar filtres-->
             <section id="filters-section">
@@ -81,21 +78,21 @@
             </section>
         
             <!--section info-->
-            <section id="info">
+            <div id="info">
                 <!--icon info-->
                 <div><div class="circle-icon-info"><i class="fas fa-info fa-sm"></i></div></div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </section>
+            </div>
 
             <!--section des chambres-->
-            <section id="principal-display"> 
+            <div id="principal-display"> 
                 <!--section Hebergements a marseille-->
                 <section id="rooms-in-marseille">
 
                     <h2 id="h2-rooms-marseille">Hébergements à Marseille</h2>
                     <div id="section-rooms-in-marseille"> 
 
-                        </a><article class="square-rooms-in-marseille"><a href="">
+                        <article class="square-rooms-in-marseille"><a href="#">
                             <div class=""><img class="image-size-rooms" alt="la-cannebiere." src="images/hebergements/4_small/la-cannebiere.jpg"> </div>
                             <div class="text-logo-rooms-marseille"> 
                                 <h3>Auberge la Cannebière</h3>
@@ -110,7 +107,7 @@
                             </div>
                         </a></article>
 
-                        <article class="square-rooms-in-marseille"><a href="">
+                        <article class="square-rooms-in-marseille"><a href="#">
                             <img class="image-size-rooms" alt="hotel-du-port" src="images/hebergements/4_small/hotel-du-port.jpg">
                             <div class="text-logo-rooms-marseille">              
                                 <h3>Hôtel du port</h3>
@@ -125,7 +122,7 @@
                             </div>      
                         </a></article>
 
-                        <article class="square-rooms-in-marseille"><a href="">
+                        <article class="square-rooms-in-marseille"><a href="#">
                             <img class="image-size-rooms" alt="les-mouettes" src="images/hebergements/4_small/les-mouettes.jpg"> 
                             <div class="text-logo-rooms-marseille">
                                 <h3>Hôtel Les mouettes</h3>
@@ -140,7 +137,7 @@
                             </div>
                         </a></article>
 
-                        <article class="square-rooms-in-marseille"><a href="">
+                        <article class="square-rooms-in-marseille"><a href="#">
                             <img class="image-size-rooms" alt="hotel-de-la-mer" src="images/hebergements/4_small/hotel-de-la-mer.jpg">
                             <div class="text-logo-rooms-marseille">
                                 <h3>Hôtel de la mer</h3>
@@ -155,7 +152,7 @@
                             </div>
                         </a></article>
 
-                        <article class="square-rooms-in-marseille"><a href="">
+                        <article class="square-rooms-in-marseille"><a href="#">
                             <img class="image-size-rooms" alt="le-panier" src="images/hebergements/4_small/le-panier.jpg"> 
                             <div class="text-logo-rooms-marseille"> 
                                 <h3>Auberge Le Panier</h3>
@@ -170,7 +167,7 @@
                             </div>
                         </a></article>
 
-                        <article class="square-rooms-in-marseille"><a href="">
+                        <article class="square-rooms-in-marseille"><a href="#">
                             <div><img class="image-size-rooms" alt="chez-amina" src="images/hebergements/4_small/chez-amina.jpg"></div>
                             <div class="text-logo-rooms-marseille">
                                 <h3>Hôtel chez Amina</h3>
@@ -191,15 +188,15 @@
                 <!--section les plus populaires-->
                 <section id="most-populaires">
 
-                    <article id="title-case-right">
+                    <div id="title-case-right">
                         <h2>Les plus populaires</h2>
                         <!-- graph icon-->
                         <i class="fas fa-chart-line fa-2x"></i>
-                    </article>        
+                    </div>        
 
                     <div id="section-most-popular">
-                        </a><article class="square-most-popular"><a href="">
-                            <img class="image-size-popular" alt=""src="images/hebergements/4_small/le-soleil-du-matin.jpg" >
+                        <article class="square-most-popular"><a href="#">
+                            <img class="image-size-popular" alt="" src="images/hebergements/4_small/le-soleil-du-matin.jpg" >
                             <div class="text-logo-most-popular">           
                                 <h3>Hôtel Le soleil du matin</h3>                           
                                 <p>Nuit à partir de 128€</p>
@@ -213,7 +210,7 @@
                             </div> 
                         </a></article>
 
-                        <article class="square-most-popular"><a href="">
+                        <article class="square-most-popular"><a href="#">
                             <img class="image-size-popular" alt="" src="images/hebergements/4_small/au-coeur-de-leau.jpg" >
                             <div class="text-logo-most-popular">
                                 <h3>Au coeur de l'eau Chambres d'hôtes</h3>
@@ -228,7 +225,7 @@
                             </div>    
                         </a></article>
 
-                        <article class="square-most-popular"><a href="">
+                        <article class="square-most-popular"><a href="#">
                             <img class="image-size-popular" alt=""  src="images/hebergements/4_small/hotel-tout-bleu-et-blanc.jpg"  >
                             <div class="text-logo-most-popular">
                                 <h3>Hôtel Tout bleu et Blanc</h3>
@@ -244,7 +241,7 @@
                         </a></article>
                     </div>
                 </section>         
-            </section>
+            </div>
 
 
             <!--section Activités a marseille-->
