@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap');
 
 * {
   font-family: "Raleway";
@@ -29,6 +30,7 @@ a {
   color: black;
   text-decoration: none;
 }
+
 
 body {
   margin: 0 auto;
@@ -168,6 +170,10 @@ nav a {
   font-weight: bold;
 }
 
+.rechercher-responsive{
+    display: none;
+}
+
 .rechercher span {
   font-size: 15px;
   font-weight: bold;
@@ -305,6 +311,7 @@ nav ul {
 #principal-display {
   display: flex;
   justify-content: space-between;
+
 }
 
 /*----------------------------------------------------------------------
@@ -346,7 +353,7 @@ nav ul {
   text-decoration: none;
   margin-bottom: 30px;
   color: black;
-  height: 45%;
+  height: 40%;
   width: 30%;
   background-color: white;
   border-radius: 30px;
@@ -377,6 +384,7 @@ nav ul {
   font-weight: 800;
   font-size: 1.2rem;
 }
+
 
 /*----------------------------------------------------------------------
 ------------------------les plus populaires------------------------
@@ -456,7 +464,7 @@ nav ul {
 
 .star-logo-right {
   position: absolute;
-  bottom: -95px;
+  bottom: 15px;
 }
 
 /*----------------------------------------------------------------------
@@ -610,3 +618,389 @@ footer h3 {
 }
 
 
+
+/*----------------------------------------------------------------------
+------------------------------------------------------------------------
+--------------------------RESPONSIVE TABLETTE---------------------------
+------------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1400px) {
+
+    h1{
+        font-size: 4wh;
+    }
+
+
+    h3{
+        font-size: 2wh;
+    }
+
+    h4{
+        font-size: 2wh;
+    }
+
+
+    p{
+        font-size: 1wh;
+    }
+    /*------------------------------
+    ---------HEADER NAVBAR----------
+    ------------------------------*/
+
+    header{
+        height: auto;
+        padding: 0;
+
+    }
+
+    .navigation1{
+        border-bottom: 3px solid lightgrey;
+        position: absolute;
+        left: 0px;
+        width:50%;
+        height: 50%;
+        padding-top: 30px;
+        padding-top: 30px;
+    }
+
+    .navigation1:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+
+        color: #0065FC;
+        font-weight: 600;
+        
+    }
+
+    .navigation2{
+        border-bottom: 3px solid lightgrey;
+        position: absolute;
+        right: 0px;
+        width:50%;
+        height: 50%;
+        padding-top: 30px;
+
+    }
+
+    .navigation2:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+        font-weight: 600;
+
+    }
+    .subscribe{
+        position: absolute;
+        right: 0px;
+        width: 100%;
+        height: 100%;
+        grid-area: subscribe;
+        padding-top: 40px;
+        text-align: end;
+        font-weight: 600;
+        color: #0065FC;
+    }
+
+    .subscribe a{
+        display: inline-block;
+        color: #0065FC;
+        padding-top: 0px;
+
+    }
+    
+    .subscribe a:hover{
+        background-color: white;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        color:  #0065FC;
+
+    }
+
+
+    nav{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "logo subscribe"
+        "nav nav ";
+        font-size: 2vh;
+    }
+
+
+    nav ul {
+        grid-area: nav;
+        display: flex;
+
+    }
+
+    li a{
+        text-align:center;
+        text-decoration: none;
+        color: black;
+        height: 100%;
+
+    }
+
+    nav a {
+        display: block;
+        text-align:center;
+        text-decoration: none;
+        color: black;
+    
+    }
+
+    #img-logo-reservia{
+        grid-area: logo;
+        object-fit: scale-down;
+        height: 3.5em;
+        margin-top: 15px;
+        padding-left: 19px;
+
+    }
+
+
+    main{
+        padding:0;
+    }
+
+    /*------------------------------
+    ----------PRESENTATION----------
+    ------------------------------*/
+
+
+    #presentation{
+        padding: 40px 19px 25px 19px;
+        line-height: 1.2em;
+    }
+
+    #presentation h1{
+        line-height: 1em;
+    }
+
+    .logo-localisation{
+        background-color: #F2F2F2;
+        width: 17%;
+    }
+
+    #search-section{
+        padding-left: 19px;
+        padding-right: 19px;
+        width: 100%;
+    }
+
+    .search-bar{
+        width: 350px;
+    }
+
+    .rechercher{
+        display: none;
+    }
+
+    .type-search{
+        width: 75%;
+    }
+
+    .rechercher-responsive{
+        display: block;
+        background-color: #0065FC;
+        border-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 18%;
+        border: none;
+        color: white;
+        outline: none;
+        font-weight: bold;
+        margin-left: -15px;
+    }
+
+    /*------------------------------
+    ----------LES FILTRES-----------
+    -------------------------------*/
+    
+    #filters-section{
+        padding-left: 19px;
+        padding-right: 19px;
+
+    }
+
+    .filters-bar {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    #filters-section button{
+        margin-bottom: 25px;
+        height: 61px;
+        margin-right: 40px;
+    }
+
+    .circle-icon-filter {
+        height: 61px;
+        width: 61px;
+    }
+
+
+    /*------------------------------
+    -------------INFOS--------------
+    -------------------------------*/
+
+    #info{
+        padding-left: 19px;
+        padding-right: 19px;
+        white-space: normal;
+
+    }
+    
+    #principal-display{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*--------------------------------------------
+    -------------LES PLUS POPULAIRES--------------
+    ---------------------------------------------*/
+
+    #most-populaires{
+        flex-direction: column;
+        width: 100%;
+        height: 380px;
+        border-radius: 0px;
+
+    }
+
+
+    #section-most-popular{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .square-most-popular{
+        width: 30%;
+        height: 100%;
+    }
+
+    .square-most-popular a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #title-case-right{
+        justify-content: space-between;
+        padding: 0px 35px ;    
+    }
+
+    .image-size-popular{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        width: 100%;
+        height: 170px;
+    }
+
+    .text-logo-most-popular{
+        margin: 0px 0px 0px 9px;
+    }
+ 
+    .text-logo-most-popular p{
+        top: 40px;
+    }
+
+    .star-logo-right{
+        bottom: 5px;
+    }
+
+    /*-------------------------------------------------
+    -------------HEBERGEMENTS A MARSEILLE--------------
+    --------------------------------------------------*/
+
+    #rooms-in-marseille{
+        border-radius: 0px;
+        width: 100%;
+        height: 780px;
+
+    }
+
+    #section-rooms-in-marseille{
+        height: 100%;
+    }
+
+    #section-rooms-in-marseille a{
+        width: 48%;
+        height: fit-content;
+    }
+    .image-size-rooms{
+
+        height: 170px;
+
+    }
+
+
+
+    /*------------------------------
+    -------------ACTIVITE-----------
+    -------------------------------*/
+
+    #Activity-in-marseille{
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+
+    .square-article{
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .Section-activity{
+        flex-wrap: wrap;
+        padding-left: 19px;
+        padding-right: 19px;
+
+    }
+
+    .big-picture-link{
+        height: auto;
+        width: 48%;
+    }
+
+    .columns-picture{
+        width: 48%;
+    }
+
+    footer{
+        width: auto;
+        margin-top: 50px;
+        padding-bottom: 15px;
+    }
+
+    #menu-footer {
+        flex-direction: row;
+    }
+
+    li a{
+        font-size: 1wh;
+    }
+
+}
+
+
+@media screen and (max-width: 1158px){
+    #menu-footer {
+        flex-direction: column;
+    }
+}
